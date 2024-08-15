@@ -1,0 +1,55 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>
+      <img src="assets/images/Logo.png" width="60">
+      <span class="logo-name" i18n>NOVATECH</span>
+    </span>
+    <span class="example-spacer"></span>
+
+    <!-- Desktop Navigation Links -->
+    <div class="desktop-nav">
+      <a mat-button href="/home" i18n>Home</a>
+
+  <!-- <a routerLink="/crisis-center" routerLinkActive="active" ariaCurrentWhenActive="page">Crisis Center</a>
+  <a routerLink="/heroes" routerLinkActive="active" ariaCurrentWhenActive="page">Heroes</a> -->
+  <!-- <a mat-button routerLink="/services">services</a> -->
+
+      <a mat-button href="/main" i18n>Client</a>
+      <a mat-button href="/services">Services</a> 
+
+      <!-- <a mat-button routerLink="/services" routerLinkActive="active" ariaCurrentWhenActive="page" i18n>Service</a> -->
+      <a mat-button href="#" i18n>Blog</a>
+      <a mat-button href="#" i18n>Contact</a>
+    </div>
+    
+
+    <!-- Mobile Menu Toggle -->
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="mobile-nav" (click)="toggleNavLinks()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- Mobile Navigation Links -->
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon i18n>home</mat-icon>
+    <span i18n>Accueil</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>person</mat-icon>
+    <span i18n>Client</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>build</mat-icon>
+    <span i18n>Services</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>article</mat-icon>
+    <span i18n>Blog</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>contact_mail</mat-icon>
+    <span i18n>Contact</span>
+  </button>
+</mat-menu>

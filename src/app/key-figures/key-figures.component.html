@@ -1,0 +1,6 @@
+<div class="key-figures-container" (window:scroll)="onScroll()">
+    <div class="figure" *ngFor="let figure of figures">
+        <h2>{{ figure.currentValue }}</h2>
+        <p>{{ figure.label }}</p>
+    </div>
+</div>
