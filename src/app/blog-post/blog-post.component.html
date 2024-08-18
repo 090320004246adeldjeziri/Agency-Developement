@@ -1,0 +1,28 @@
+<!-- blog-post.component.html
+<div class="blog-post-container" *ngIf="blog">
+    <h1 class="blog-title">{{ blog.title }}</h1>
+    <p class="blog-author">Author: {{ blog.author }}</p>
+    <div class="content-grid">
+      <div *ngFor="let section of blog.content" class="content-card">
+        <h2 class="section-subtitle">{{ section.subtitle }}</h2>
+        <p class="section-paragraph">{{ section.paragraph }}</p>
+      </div>
+    </div>
+    <button (click)="goBack()" class="back-btn">Back to Blog List</button>
+  </div> -->
+
+  <div class="blog-post-container" *ngIf="blog">
+    <h1 class="blog-title">{{ blog.title }}</h1>
+    <p class="blog-author">Author: {{ blog.author }}</p>
+    <div class="content-grid">
+      <div *ngFor="let section of blog.content" class="content-card">
+        <h2 class="section-subtitle">{{ section.subtitle }}</h2>
+        <p class="section-paragraph">{{ section.paragraph }}</p>
+      </div>
+    </div>
+    <button class="back-btn" (click)="goBack()">Back to Blogs</button>
+  </div>
+  <div *ngIf="!blog">
+    <p>Blog not found.</p>
+    <button class="back-btn" (click)="goBack()">Back to Blogs</button>
+  </div>
