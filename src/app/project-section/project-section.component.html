@@ -1,3 +1,11 @@
-<div class="m-10 bg-red-600 flex flex-wrap content-center justify-center"  >
-    <app-card class="m-5" *ngFor="let data of projectData; let i = index" [data]="data" [id]="i" [class]="getClassAnimation(i)"></app-card>
+<div class="py-8 px-4 mx-auto text-center lg:py-16 lg:px-6">
+    <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Projects</h2>
+        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Explore the whole collection of Web , Mobile
+            and Desktop Projects</p>
+    </div>
+    <div class="m-10 flex flex-wrap content-center justify-center">
+        <app-card class="m-5" *ngFor="let data of projectData; let i = index" [data]="data" [id]="i"
+            [class]="getClassAnimation(i)"></app-card>
+    </div>
 </div>

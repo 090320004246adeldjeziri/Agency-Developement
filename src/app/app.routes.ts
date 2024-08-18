@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
 import { ApplicationConfig, NgModule } from '@angular/core';
+import { MainComponent } from './main/main.component';
 
 export const routes: Routes = [
     {path:'',component:HomeComponent},
