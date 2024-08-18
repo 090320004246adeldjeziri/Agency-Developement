@@ -1,0 +1,20 @@
+<!-- project post with featured image -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto">
+        <!-- project post header -->
+        <div class="py-8">
+            <h1 class="text-3xl font-bold mb-2">{{data.name}} </h1>
+            <p class="text-gray-500 text-sm">{{data.type}}</p>
+        </div>
+
+        <!-- Featured image -->
+        <img [src]="'/assets/'+data.img_path" alt="Featured image" class="w-full h-auto mb-8">
+
+        <!-- Project post content -->
+        <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
+            <p>{{data.desc}}</p>
+            <p>{{data.chalange}}</p>
+            <p>{{data.tec_used}}</p>
+        </div>
+    </div>
+</div>
