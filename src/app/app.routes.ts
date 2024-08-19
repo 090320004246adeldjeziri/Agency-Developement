@@ -1,17 +1,18 @@
-import { provideRouter, RouterModule, Routes, withDebugTracing } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ServicesComponent } from './services/services.component';
+// src/app/app.routes.ts
+import { Routes } from '@angular/router';
+import { HomeComponent } from './home-page/home.component';
+import { ServicesComponent } from './service-section/services.component';
+import { BlogListComponent } from './blog-list-page/blog-list.component';
+import { BlogPostComponent } from './blog-post-page/blog-post.component';
 import { ProjectPageComponent } from './project-page/project-page.component';
-import { ApplicationConfig, NgModule } from '@angular/core';
-import { MainComponent } from './main/main.component';
+
 
 export const routes: Routes = [
-    {path:'',component:HomeComponent},
-    {path:'services',component:ServicesComponent},
-    {path:'home',component:HomeComponent},
-    {path:'project',component:ProjectPageComponent}
+    { path: '', component: HomeComponent },
+    { path: 'home', component: HomeComponent },
+    { path: 'services', component: ServicesComponent },
+    { path:'project',component:ProjectPageComponent},
+    { path: 'blog', component: BlogListComponent },
+    { path: 'blog/:id', component: BlogPostComponent },
+    { path: '**', redirectTo: '/blog', pathMatch: 'full' } // Catch-all route
 ];
-
-export const appConfig: ApplicationConfig = {
-    providers: [provideRouter(routes)]
-}

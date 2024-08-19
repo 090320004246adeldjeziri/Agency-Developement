@@ -3,6 +3,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { MatMenuModule } from '@angular/material/menu';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
   imports: [
-    
+    RouterLink,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,

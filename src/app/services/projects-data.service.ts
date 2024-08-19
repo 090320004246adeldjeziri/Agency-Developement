@@ -15,7 +15,9 @@ export class ProjectsDataService {
       img_path : "img1.jpg",
       type : "desk",
       chalange : "lorem gah deusclkqg oakeu dqs jkeu aoe,",
-      tec_used : "angular;firebase"
+      tec_used : "angular;firebase",
+      link :''
+    
     } ,
     
     {
@@ -24,7 +26,8 @@ export class ProjectsDataService {
       img_path : "img2.jpg",
       type : "web",
       chalange : "lorem gah deusclkqg oakeu dqs jkeu aoe,",
-      tec_used : "angular;firebase"
+      tec_used : "angular;firebase",
+      
     } ,
     {
       name : "Project web 1",

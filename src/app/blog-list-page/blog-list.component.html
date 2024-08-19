@@ -1,0 +1,12 @@
+<!-- blog-list.component.html -->
+<div class="blog-list-container">
+    <h1 class="blog-list-title">Our Blog Posts</h1>
+    <div class="blog-grid">
+      <div *ngFor="let blog of blogs" class="blog-card">
+        <h2 class="blog-card-title">{{ blog.title }}</h2>
+        <p class="blog-card-author">Author: {{ blog.author }}</p>
+        <p class="blog-card-description">{{ blog.shortDescription }}</p>
+        <button (click)="readMore(blog)" class="read-more-btn">Read more</button>
+      </div>
+    </div>
+  </div>
