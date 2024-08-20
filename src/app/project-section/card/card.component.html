@@ -1,13 +1,13 @@
 
-<div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-    <a [href]="'/project?id='+id">
-        <img class="rounded-t-lg" [src]="'app/assets/images/'+data.img_path" alt="" />
+<div class="flex flex-col h-full justify-stretch w-full max-w-sm bg-white border border-gray-200 rounded-lg drop-shadow-md dark:bg-gray-800 dark:border-gray-700 ">
+    <a [href]="'/project?id='+id" class="h-3/6 overflow-hidden" >
+        <img class="rounded-t-lg h-full w-full object-cover hover:scale-110 hover:rotate-3 transition-all duration-200 " [src]="data.img_path" alt="" />
     </a>
-    <div class="p-5">
-        <a [href]="'/project?id='+id">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{data.name}}</h5>
+    <div class="p-5  h-3/6 flex flex-col justify-between items-center">
+        <a [href]="'/project?id='+id" class="">
+            <h5 class="mb-2 line-clamp-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{data.name}}</h5>
         </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{data.desc}}</p>
+        <p class="mb-3 line-clamp-4 font-normal text-gray-700 dark:text-gray-400 ">{{data.desc}}</p>
         <a [href]="'/project?id='+id" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
             Read more
              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

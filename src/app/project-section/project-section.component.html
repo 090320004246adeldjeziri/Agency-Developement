@@ -4,8 +4,7 @@
         <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Explore the whole collection of Web , Mobile
             and Desktop Projects</p>
     </div>
-    <div class="m-10 flex flex-wrap content-center justify-center">
-        <app-card class="m-5" *ngFor="let data of projectData; let i = index" [data]="data" [id]="i"
-            [class]="getClassAnimation(i)"></app-card>
+    <div class="m-10 flex flex-wrap content-center justify-center ">
+        <app-card class="m-5 h-[500px] w-[350px] intersect:animate-fade-up intersect-half" *ngFor="let data of projectData; let i = index" [data]="data" [id]="i" ></app-card>
     </div>
 </div>
