@@ -3,11 +3,12 @@ import { ActivatedRoute, Router, RouterLink, RouterStateSnapshot } from '@angula
 import { routes } from '../app.routes';
 import { ProjectModel } from '../models/projects_model';
 import { ProjectsDataService } from '../services/projects-data.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-project-page',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './project-page.component.html',
   styleUrl: './project-page.component.css'
 })
@@ -31,6 +32,7 @@ export class ProjectPageComponent implements OnInit {
       console.log("unloaded");
     }
   }
+  
 
 
 }

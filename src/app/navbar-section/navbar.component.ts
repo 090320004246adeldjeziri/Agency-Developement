@@ -22,10 +22,14 @@ import { RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
   showNavLinks = false;  // Initial state is hidden
-
+  /***
+   * @param x-happy to see you 
+   * @returns nothing
+   * @abstract function for navbar responsive
+   */
   toggleNavLinks() {
     this.showNavLinks = !this.showNavLinks; // Toggle visibility
   }
-
+ 
  
 }
