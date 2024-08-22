@@ -1,5 +1,5 @@
 <div class="py-8 px-4 mx-auto text-center lg:py-16 lg:px-6">
-    <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16">
+    <div class="mx-auto mb-8 max-w-screen-sm lg:mb-16 intersect:animate-jump-in">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Projects</h2>
         <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">Explore the whole collection of Web , Mobile
             and Desktop Projects</p>
@@ -8,3 +8,4 @@
         <app-card class="m-5 h-[500px] w-[350px] intersect:animate-fade-up intersect-half" *ngFor="let data of projectData; let i = index" [data]="data" [id]="i" ></app-card>
     </div>
 </div>
+<script defer src="https://unpkg.com/tailwindcss-intersect@2.x.x/dist/observer.min.js"></script>

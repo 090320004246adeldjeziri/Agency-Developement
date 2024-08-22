@@ -1,0 +1,66 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VTIMEZONE
+TZID:America/Toronto
+X-LIC-LOCATION:America/Toronto
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/Toronto:20240821T100000
+DTEND;TZID=America/Toronto:20240821T110000
+DTSTAMP:20240820T133251Z
+ORGANIZER;CN=RH Tech Mind:mailto:recrutementcg.contact@gmail.com
+UID:2rgur7qo83v98ncd06tkqg23lk@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=harmomsp@gmail.com;X-NUM-GUESTS=0:mailto:harmomsp@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;RSVP=TRUE
+ ;CN=RH Tech Mind;X-NUM-GUESTS=0:mailto:recrutementcg.contact@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=info.ghalmi@gmail.com;X-NUM-GUESTS=0:mailto:info.ghalmi@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=
+ TRUE;CN=nasrghalmi@gmail.com;X-NUM-GUESTS=0:mailto:nasrghalmi@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/qfm-mgey-qon
+X-MICROSOFT-CDO-OWNERAPPTID:-1227207177
+CREATED:20240820T053228Z
+DESCRIPTION:We would like to inform you about the progress of your intervie
+ w for the position of .NET C# and Angular Developer.\n\nConduct of the inte
+ rview:\n\nPresentation of the company and the interviewer: Introduction to 
+ our company and presentation of the people who will conduct the interview.\
+ n\nHuman resources questions: Discussion about your professional background
+ \, your motivations and your career goals.\n\nTechnical questions: Assessin
+ g your skills in .NET C# and Angular.\n\nQuestions about your experience: U
+ nderstanding your professional background\, the technologies you are famili
+ ar with\, your work style\, the size of the teams you have worked with\, th
+ e methodologies you have used and the projects you have managed.\n\nBehavio
+ ral and cultural questions: Assessment of your adaptation to various work s
+ ituations and your fit with our company culture.\n\nQuestion session: Oppor
+ tunity for you to ask questions about the position or company.\n\nGood luck
+  and good luck\n\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~::~:~::-\nJoin with Google Meet: https://meet.google.
+ com/qfm-mgey-qon\n\nLearn more about Meet at: https://support.google.com/a/
+ users/answer/9282720\n\nPlease do not edit this section.\n-::~:~::~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20240820T133249Z
+LOCATION:Google Meet (instructions in description)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:sidnas Abderrahmane and Chakib Ghalmi
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR

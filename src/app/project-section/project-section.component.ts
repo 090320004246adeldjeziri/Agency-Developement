@@ -13,7 +13,7 @@ import { Observer } from 'tailwindcss-intersect';
 })
 export class ProjectSectionComponent {
   constructor(){
-    Observer.start();
+    Observer.observe();
   }
   getClassAnimation(index:number) {
     return "animate-fade-up animate-once animate-delay-200";

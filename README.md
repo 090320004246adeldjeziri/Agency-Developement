@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Some ruls abour the Projects Data structure
+
+follow the same pattern when filling the data of projects 
+access to the service file : app>services>project-dataservice.ts
+add data using following this example :
+
+    {
+      name*: "Project name", 
+      desc*: "description about the project", 
+      type*: "mobile", 
+      chalange*: "the challange of this project", 
+      tec_used*: "tech,separated,by,cama", 
+      link*: "url assosiated with this project", 
+      vedio_url: "url or (the full path starting from app>assets>.. ex:app/assets/images/portfolioFlutter/vedio.mp4)", 
+      problem: "The original probleme to this solution" 
+    }
